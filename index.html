@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuxeStep | Handcrafted Nigerian Excellence ₦</title>
+    <title>GenGen | Handcrafted Nigerian Excellence ₦</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -23,7 +23,7 @@
 
     <nav class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-stone-200">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-            <a href="#" class="text-2xl font-black tracking-tighter italic">LUXESTEP.</a>
+            <a href="#" class="text-2xl font-black tracking-tighter italic">GENGEN.</a>
             
             <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
                 <a href="#men" class="hover:text-amber-700 transition">Men</a>
@@ -61,7 +61,7 @@
                 <img src="https://images.unsplash.com/photo-1590736952402-2399238e974f?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
             </div>
             <div>
-                <h2 class="text-4xl font-black mb-6 uppercase">Why LuxeStep?</h2>
+                <h2 class="text-4xl font-black mb-6 uppercase">Why Gengen?</h2>
                 <div class="space-y-8">
                     <div class="flex gap-4">
                         <i class="fa-solid fa-hammer text-amber-700 text-xl"></i>
@@ -132,9 +132,9 @@
                     </div>
                 </div>
                 <div id="transfer-details" class="hidden bg-stone-100 p-6 text-[10px] uppercase font-bold space-y-2 border-l-4 border-amber-700">
-                    <p>Bank: GTBank / Zenith Bank</p>
-                    <p>Account Name: LUXESTEP FOOTWEAR LTD</p>
-                    <p>Account Number: 0123456789</p>
+                    <p>Bank: GTBank / GT Bank</p>
+                    <p>Account Name: GENGEN FOOTWEAR LTD</p>
+                    <p>Account Number: 1021554832</p>
                     <p class="text-amber-800">Please send proof of payment to WhatsApp after ordering.</p>
                 </div>
                 <button onclick="completePurchase()" class="w-full bg-amber-700 text-white py-6 font-black uppercase tracking-[0.3em] text-sm mt-10">Complete My Order</button>
@@ -148,7 +148,7 @@
     <footer class="bg-black text-stone-500 py-20 px-6">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
             <div>
-                <h3 class="text-2xl font-black text-white italic mb-6">LUXESTEP.</h3>
+                <h3 class="text-2xl font-black text-white italic mb-6">GENGEN.</h3>
                 <p class="text-xs uppercase tracking-widest leading-loose">The Pinnacle of Handcrafted Footwear.<br>Lagos, Nigeria.</p>
             </div>
             <div>
@@ -159,7 +159,7 @@
                 </div>
             </div>
             <div class="text-[10px] uppercase tracking-[0.3em] pt-10">
-                © 2026 LUXESTEP. Hand-finished Excellence.
+                © 2026 GENGEN. Hand-finished Excellence.
             </div>
         </div>
     </footer>
@@ -177,7 +177,7 @@
             { id: 9, name: "Gold Chain Black Loafer", price: 48000, img: "https://images.unsplash.com/photo-1603189343302-e603f7add05a?auto=format&fit=crop&q=80&w=800", cat: "Women" }
         ];
 
-        let cart = JSON.parse(localStorage.getItem('luxestep_cart')) || [];
+        let cart = JSON.parse(localStorage.getItem('gengen_cart')) || [];
         let payMethod = 'card';
 
         function displayProducts() {
@@ -295,7 +295,7 @@
 
         function orderViaWhatsApp(id) {
             const product = products.find(p => p.id === id);
-            const msg = `Hello LuxeStep, I want to order the ${product.name} priced at ₦${product.price.toLocaleString()}. Is this still available?`;
+            const msg = `Hello Gengen, I want to order the ${product.name} priced at ₦${product.price.toLocaleString()}. Is this still available?`;
             window.open(`https://wa.me/2348102184747?text=${encodeURIComponent(msg)}`, '_blank');
         }
 
